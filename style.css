@@ -1,0 +1,103 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(#141e30, #243b55);*/
+  background: black;
+}
+.login{
+  border-left:none; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  border: 1px solid red;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  /*border-bottom: 1.50px solid #03e9f4;*/
+ 
+  /*border-left: 2px solid red;*/
+  /*border-radius: 10px;*/
+}
+.login h2{
+  margin: 0 0 30px;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+.login .user-box{
+  position: relative;
+}
+.login .user-box input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: darkgray;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #03e9f4;
+  outline: none;
+  background: transparent;
+}
+.login .user-box label{
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  color: white;
+  pointer-events: none;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.login .user-box input:focus ~ label,
+.login .user-box input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: white;
+  /*color: white;*/
+  font-size: 12px;
+}
+.login p{
+  color: darkgray;
+  cursor: pointer;
+}
+.login p span{
+  color: white;
+  float: right;
+}
+.login form a{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.login {
+  padding: 15px;
+  border-left: 2px solid red;
+  border-bottom-right-radius: 50px 40px;
+}
+.double-border {
+
+  border-width: 7px;
+  border-style: double;
+  border-left:1px solid red;
+  border-color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
